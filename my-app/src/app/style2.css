@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+/* ==================================================== Job Page ========================================================== */
+.JobPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+}
+.JobPage h1 {
+  color: #27272a;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+/* ==================================================== Result Page ========================================================== */
+
+.ResultPage {
+  min-height: 540px;
+  max-height: max-content;
+  width: 100%;
+}
+.ResultPage h1 {
+  width: 100%;
+  text-align: center;
+  color: #044E83;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 32px 0px;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  position: relative;
+  margin: 30px;
+  padding: 30px 24px;
+  height: max-content;
+  width: 672px;
+  border-radius: 0.50rem;
+  &::before{
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 1rem #000;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+form .input-div {
+  width: 100%;
+  margin: 24px 0px;
+}
+.input-div label {
+  color: #18222f;
+  font-size: 20px;
+}
+.input-div input {
+  width: 100%;
+  background-color: #f3f4f6;
+  margin: 4px 0px 8px;
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 0.25rem;
+  outline-color: #5bb7e8;
+}
+input::placeholder {
+  font-size: 18px;
+}
+.submit-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.submit-container button {
+  width: 208px;
+  height: 56px;
+  margin: 20px 0px 0px;
+  padding: 15px 0px;
+  background-color: #044E83;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ==================================================== Apply Page ========================================================== */
+
+.ApplyPage{
+  min-height: 510px;
+  max-height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow-accounts-div{
+  position: relative;
+  width: 672px;
+  min-height: 464px;
+  max-height: max-content;
+  margin: 70px 56px 0px 56px;
+  padding: 64px;
+  &::before{
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 1rem #000;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+.follow-accounts-div h1{
+  color: #044E83;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 35px;
+}
+.follow-accounts-div i{
+  color: blue;
+  font-size: 40px;
+}
+.apply-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 40px;
+}
+.apply-box button {
+  width: 190px;
+  height: 50px;
+  margin: 20px 0px 0px;
+  padding: 11px 0px;
+  background-color: #044E83;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.admit-card{
+  margin-top: 10px;
+}
+.admit-card p{
+  margin-top: 30px;
+  font-size: 18px;
+}
+.admit-card a{
+  font-size: 17px;
+  color: rgb(73, 73, 199);
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 577px){
+  .follow-accounts-div{
+    padding: 44px 20px;
+    min-height: 100px;
+  }
+  .follow-accounts-div h1{
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .ResultPage h1{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+  form{
+    margin: 40px 10px;
+  }
+  .JobPage h1 {
+    font-size: 22px;
+  }
+  .follow-accounts-div{
+    padding: 50px 10px;
+    margin: 70px 10px 0px 10px;
+  }
+  .follow-accounts-div h1{
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+  .apply-box button {
+    width: 150px;
+    height: 45px;
+    padding: 9px 0px;
+  }
+  .admit-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .admit-card p{
+    font-size: 17px;
+  }
+  .admit-card a{
+    font-size: 16px;
+  }
+  
+}
+@media screen and (max-width: 390px) {
+  .ResultPage h1{
+    font-size: 23px;
+  }
+  form{
+    margin: 20px 10px;
+  }
+  .submit-container button{
+    width: 170px;
+    height: 50px;
+    padding: 12px 0px;
+  }
+  .JobPage h1 {
+    font-size: 20px;
+  }
+  .follow-accounts-div h1{
+    font-size: 1.2rem;
+    line-height: 26px;
+  }
+}
